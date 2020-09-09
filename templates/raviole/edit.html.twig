@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Raviole{% endblock %}
+
+{% block body %}
+    <h1>Edit Raviole</h1>
+
+    {{ include('raviole/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('raviole_index') }}">back to list</a>
+
+    {{ include('raviole/_delete_form.html.twig') }}
+{% endblock %}
